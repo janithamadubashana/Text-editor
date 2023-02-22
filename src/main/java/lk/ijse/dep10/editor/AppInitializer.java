@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.ijse.dep10.editor.controller.EditorSceneController;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,10 +23,10 @@ public class AppInitializer extends Application {
         FXMLLoader fxmlLoader=new FXMLLoader(fxmlFile);
         AnchorPane root=fxmlLoader.load();
         primaryStage.setScene(new Scene(root));
-//        primaryStage.setTitle("* Untitled Document");
         primaryStage.centerOnScreen();
         primaryStage.show();
 
-
+        EditorSceneController editorSceneController=fxmlLoader.getController();
+        editorSceneController. windowCloseRequest(primaryStage);
     }
 }

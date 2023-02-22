@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.editor.controller.HelperSceneController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="190.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/texteditor.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="36.0" prefHeight="65.0" prefWidth="264.0" text="About">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="251.0" text="HTML Text Editor">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="294.0" text="HTML Text Editor is a small and lightweight text editor for the GNOME desktop">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
