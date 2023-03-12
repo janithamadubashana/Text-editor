@@ -25,8 +25,5 @@ public class AppInitializer extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.centerOnScreen();
         primaryStage.show();
-
-        EditorSceneController editorSceneController=fxmlLoader.getController();
-        editorSceneController. windowCloseRequest(primaryStage);
     }
 }
